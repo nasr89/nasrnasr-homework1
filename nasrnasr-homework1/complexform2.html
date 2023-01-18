@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>complex form 2</title>
+    <style>
+      .content {
+        max-width: 800px;
+        margin: auto;
+      }
+      .first {
+        background-color: #f5f2f2;
+        width: 800px;
+        height: 30px;
+      }
+      .first label {
+        color: #0072bc;
+      }
+      select {
+        margin: 5px 0 5px 5px;
+        border-width: 0px;
+        background-color: #f5f2f2;
+      }
+      .second {
+        margin: 2px 2px;
+      }
+      .second button {
+        width: 70px;
+      }
+
+      .third {
+        float: left;
+        width: 350px;
+        margin-right: 10px;
+      }
+
+      .third input[type="text"] {
+        width: 120px;
+      }
+
+      .third th {
+        text-align: left;
+      }
+      .fourth {
+        float: right;
+        width: 350px;
+        margin-left: 0px;
+      }
+
+      .fourth input[type="text"] {
+        text-align: end;
+        width: 220px;
+      }
+
+      .fourth th {
+        text-align: left;
+      }
+
+      .fourthh {
+        float: right;
+        width: 200px;
+        margin-left: 0px;
+      }
+
+      .fourthh input[type="text"] {
+        text-align: end;
+        width: 100px;
+      }
+
+      .fourthh th {
+        text-align: left;
+      }
+
+      .fifth {
+        border: gray solid 1px;
+      }
+
+      tbody {
+        border-bottom: black 1px dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="first">
+        <select name="record" id="record">
+          <option value="record" selected>Record</option>
+          <option value="record1">Record1</option>
+          <option value="record2">Record2</option>
+        </select>
+
+        <span style="float: right; margin-right: 3px">
+          <label style="color: #0072bc" for="views">View:</label>
+          <select style="border-width: 1px" name="views" id="views">
+            <option value="review" selected>Review Orders</option>
+            <option value="delete">Delete Orders</option>
+          </select>
+        </span>
+      </div>
+
+      <br />
+
+      <div class="second">
+        ⬆️⬇️ * - indicates a required field
+
+        <span style="float: right">
+          <button type="submit">OK</button>
+          <button>Delete</button>
+          <button>Cancel</button>
+        </span>
+      </div>
+
+      <hr />
+
+      <div class="third">
+        <table>
+          <tr>
+            <th>Customer:</th>
+            <td>
+              <input
+                type="text"
+                name="customer"
+                id="customer"
+                value="Bon app🗞️"
+              />🏠
+            </td>
+          </tr>
+
+          <tr>
+            <th>Employee:</th>
+            <td>
+              <input
+                type="text"
+                name="employee"
+                id="employee"
+                value="Bon app🗞️"
+              />🏠
+            </td>
+          </tr>
+          <tr>
+            <th>Order Date:</th>
+            <td>
+              <input
+                type="date"
+                name="orderdate"
+                id="orderdate"
+                value="5/6/1998"
+              />🗓️
+            </td>
+          </tr>
+          <tr>
+            <th>Required Date:</th>
+            <td>
+              <input
+                type="date"
+                name="requireddate"
+                id="requireddate"
+                value="6/3/1998"
+              />🗓️
+            </td>
+          </tr>
+          <tr>
+            <th>Shipped Date</th>
+            <td><input type="date" name="shippeddate" id="shippeddate" />🗓️</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="fourth">
+        <table>
+          <tr>
+            <th>Address:</th>
+            <td>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                value="12,rue des Bouchers"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>City:</th>
+            <td>
+              <input type="text" name="city" id="city" value="Marseille" />
+            </td>
+          </tr>
+          <tr>
+            <th>Region:</th>
+            <td>
+              <input type="text" name="region" id="region" />
+            </td>
+          </tr>
+          <tr>
+            <th>Postal Code:</th>
+            <td>
+              <input
+                type="text"
+                name="postalcode"
+                id="postalcode"
+                value="13008"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Ship Country:</th>
+            <td>
+              <input
+                type="text"
+                name="shipcountry"
+                id="shipcountry"
+                value="France"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <br />
+      <div style="clear: both"></div>
+      <br /><br />
+      <div class="fifth">
+        <table>
+          <thead>
+            <div class="first">
+              <select name="sd" id="sd" style="width: 15px">
+                <option value="sd">sd</option>
+              </select>
+              <input type="search" name="search" id="search" />🪪
+              <label for="action"> New order Details</label>
+              <select name="actions" id="actions" style="color: #0072bc">
+                <option value="actions" selected>Actions</option>
+                <option value="actions1">Actions1</option>
+                <option value="actions2">Actions2</option>
+              </select>
+            </div>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Product Name</th>
+              <th>Unit Price</th>
+              <th>Qunatity</th>
+              <th>Discount</th>
+              <th>Product Category Name</th>
+              <th>Product Supplier Company Name</th>
+              <th>Extended Price</th>
+            </tr>
+            <tr>
+              <td>grandma's boysenberry spread</td>
+              <td>$25.00</td>
+              <td>20</td>
+              <td>25.00%</td>
+              <td>Condiments</td>
+              <td>grandma kelly's homestead</td>
+              <td>$375.00</td>
+            </tr>
+            <tr>
+              <td>Tofu</td>
+              <td>$23.25</td>
+              <td>20</td>
+              <td>25.00%</td>
+              <td>Produce</td>
+              <td>Mayumi's</td>
+              <td>$348.75</td>
+            </tr>
+            <tr style="border-bottom: black 1px dashed">
+              <td>Teatime Chocolate Biscuits</td>
+              <td>$9.20</td>
+              <td>10</td>
+              <td>25.00%</td>
+              <td>Confections</td>
+              <td>Specialty Biscuits,Ltd</td>
+              <td>$69.00</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+        <br />
+
+        <span style="margin-left: 100px; color: gray">
+          Avg: $19.15 Sum: 50 Avg:25.00 %</span
+        >
+        <span style="float: right; margin-right: 10px">Sum: $792.75</span>
+      </div>
+
+      <br />
+
+      <div class="third">
+        <table>
+          <tr>
+            <th></th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Ship Name:</th>
+            <td>
+              <input
+                type="text"
+                name="customer"
+                id="customer"
+                value="Bon app"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Ship Via:</th>
+            <td>
+              <select name="asd" id="asd">
+                <option value="asdf" selected>United Package</option>
+                <option value="asdfg">fasdr wsdr</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="fourthh">
+        <table>
+          <tr>
+            <th>Subtotal:</th>
+            <td>
+              <input
+                type="text"
+                name="subtotal"
+                id="subtotal"
+                value="$792.75"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Freight:</th>
+            <td>
+              <input type="text" name="freight" id="freight" value="$38.28" />
+            </td>
+          </tr>
+          <tr>
+            <th>Total:</th>
+            <td>
+              <input type="text" name="total" id="total" value="$831.03" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="clear: both"></div>
+      <hr />
+
+      <div class="second">
+        ⬆️⬇️ * - indicates a required field
+
+        <span style="float: right">
+          <button type="submit">OK</button>
+          <button>Delete</button>
+          <button>Cancel</button>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
