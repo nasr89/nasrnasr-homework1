@@ -1,0 +1,23 @@
+table {
+  background-color: rgb(250, 250, 237);
+}
+
+span {
+  color: red;
+}
+th {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+body:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+}
+body:nth-child(3) {
+  background-color: beige;
+}
