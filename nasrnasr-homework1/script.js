@@ -133,5 +133,30 @@ let part2 = "naser";
 let fullnamee = part1.concat(" ", part2);
 console.log(fullnamee);//naser naser
 
-//1: create a function that act as the built in replaceAll function
+ 
+//1: create a function that act as the built in replaceAll function?
+
+
+
+
+
 //2: Create a function that act as the built in concat function
+
+
+function concact(){
+    let firstname ="nasr";
+    let lastname ="nasr";
+    const fullname = firstname +" "+ lastname;
+    return fullname;
+}
+console.log(concact());
+
+"// Create a function that act as the built in concat function without using built in function? /"
+
+
+
+
+
+
+
+
