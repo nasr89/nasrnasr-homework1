@@ -136,7 +136,13 @@ console.log(fullnamee);//naser naser
  
 //1: create a function that act as the built in replaceAll function?
 
-
+let text1 ="techlarious is a great bootcamp";
+function replaceAll(text1,word,replaced){
+    let string=text1.split(word);
+    return string.join(replaced);
+}
+let newtext=replaceAll(text1,"great","amazing");
+console.log(newtext);
 
 
 
